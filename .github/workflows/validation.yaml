@@ -24,12 +24,12 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-      working-directory: ./hands-on-developer-main/nodejs-project
+      working-directory: ./handson-developer-main/nodejs-project
 
     - name: Lint code
       run: npm run lint
-      working-directory: ./hands-on-developer-main/nodejs-project
+      working-directory: ./handson-developer-main/nodejs-project
 
     - name: Run tests
       run: npm run test
-      working-directory: ./hands-on-developer-main/nodejs-project
+      working-directory: ./handson-developer-main/nodejs-project

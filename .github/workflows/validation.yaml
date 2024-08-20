@@ -21,14 +21,15 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-      working-directory: ./developer_codebase/hands-on-developer-main/nodejs-app
+      working-directory: ./developer_codebase/hands-on-developer-main/nodejs-project
+
 
 
     - name: Lint code
       run: npm run lint
-      working-directory: ./developer_codebase/hands-on-developer-main/nodejs-app
+      working-directory: ./developer_codebase/hands-on-developer-main/nodejs-project
 
 
     - name: Run tests
       run: npm run tests
-      working-directory: ./developer_codebase/hands-on-developer-main/nodejs-app
+      working-directory: ./developer_codebase/hands-on-developer-main/nodejs-project

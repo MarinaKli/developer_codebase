@@ -14,11 +14,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Debug - List root directory
+    - name: Debug - List directory
       run: ls -la
-
-    - name: Debug - List developer_codebase directory
-      run: ls -la developer_codebase
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
@@ -27,12 +24,12 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-      working-directory: ./developer_codebase/hands-on-developer-main/nodejs-project
+      working-directory: ./hands-on-developer-main/nodejs-project
 
     - name: Lint code
       run: npm run lint
-      working-directory: ./developer_codebase/hands-on-developer-main/nodejs-project
+      working-directory: ./hands-on-developer-main/nodejs-project
 
     - name: Run tests
       run: npm run test
-      working-directory: ./developer_codebase/hands-on-developer-main/nodejs-project
+      working-directory: ./hands-on-developer-main/nodejs-project
